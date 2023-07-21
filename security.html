@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows</title>
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://kit.fontawesome.com/8ccdbbd2d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header" class="button">
+    <a href="Home.html">Home</a>
+    <a href="wordpress.html">Wordpress</a>
+    <a href="Windows.html">Windows</a>
+  </div>
+
+  <div class="img-container">
+    <img src="Assets/security.png" class="img" alt="WordPress">
+  </div>
+
+  <div class="centered" style="text-decoration: underline;">
+    <h1>Security</h1>
+  </div>
+
+  <div class="centered">
+    <h3>here we will discuss the different security issues and how to handel them, please take your time to read this section and understand all the issues.</h3><br>
+    <div class="top">
+    <h4>In preparation for the possibility of an attack:</h4>
+    </div>
+    <ul>
+        
+        <li>Keep all systems and software up-to-date with the latest security patches.</li>
+        <li>Implement strong password policies for all user accounts.</li>
+        <li>Regularly backup critical data and store it securely offline.</li>
+        <li>Deploy an intrusion detection/prevention system (IDS/IPS) to monitor and block suspicious network traffic.</li>
+        <li>Enable Windows Firewall and configure it to allow only necessary incoming and outgoing connections.</li>
+        <li>Educate employees about social engineering and other common attack vectors.</li>
+    </ul><br>
+    <div class="top">
+<br><h4>Abnormal inbound web traffic is detected:</h4>
+    </div>
+    <ul>
+        <li>Check the Sophos firewall logs for any anomalies in incoming traffic.</li>
+        <li>If necessary, block the suspicious IP addresses or ranges identified in the logs.</li>
+        <li>Analyze the Windows Event logs for any unusual activity related to web services.</li>
+        <li>Run an antivirus/anti-malware scan on all systems to identify and remove potential threats.</li>
+    </ul><br>
+<div class="top">
+    <br><h4>There is evidence your network is under attack from the outside:</h4>
+</div>
+    <ul>
+        <li>Activate incident response procedures immediately.</li>
+        <li>Isolate the affected systems from the network to prevent further spread.</li>
+        <li>Use Wireshark to capture and analyze the network traffic to identify the attack vector.</li>
+        <li>Consult the Sophos firewall logs to determine the source of the attack and block malicious IP addresses.</li>
+        <li >Contact your ISP and provide them with evidence of the attack for their assistance.</li>
+    </ul>
+<div class="top">
+    <br><h4>A DOS attack is underway:</h4>
+</div>
+    <ul>
+        <li>Notify your upstream provider and consider utilizing their DOS protection services if available.</li>
+        <li>In Sophos firewall, implement rate limiting rules to mitigate the effects of the attack.</li>
+        <li>Analyze incoming traffic patterns using Wireshark to identify the source and type of attack.</li>
+        <li>Temporarily block the attacking IP addresses using the Sophos firewall.</li>
+        <li>Consider distributing traffic using a Content Delivery Network (CDN) if available.
+        </li>
+    </ul><br>
+
+<div class="top">
+    <br><h4>Anomalous activity is detected on the internal network:</h4>
+</div>
+    <ul>
+        <li>Immediately disconnect the affected system from the network to prevent further damage.</li>
+        <li>Check the Windows Event logs on the affected system for any signs of suspicious activity.</li>
+        <li>Use Wireshark to analyze network traffic from the affected system and identify any malicious connections.</li>
+        <li>If necessary, implement network segmentation to isolate the compromised system and prevent lateral movement.</li>
+    </ul><br>
+    <div class="top">
+    <br><h4>There is evidence an attacker has gained entry to the network:</h4>
+    </div>
+    <ul>
+        <li>Initiate the incident response plan and assemble the incident response team.</li>
+        <li>Use Wireshark to perform packet analysis and identify the point of entry.</li>
+        <li>Investigate Windows Event logs for any signs of unauthorized access or privilege escalation.</li>
+        <li>Change all passwords for potentially compromised accounts, including privileged ones.</li>
+        <li>Determine the extent of the breach and the data accessed or exfiltrated.</li>
+    </ul>
+    <div class="top">
+    <br><h4> An attack has ended:</h4>
+    </div>
+    <ul>
+        <li>Conduct a post-incident review and document all findings for future reference.</li>
+        <li>Update and patch any vulnerabilities that were exploited during the attack.</li>
+        <li> Assess the effectiveness of the response and make necessary improvements to the incident response plan.</li>
+        <li>Restore services and systems that were affected during the attack.</li>
+        <li>Conduct security awareness training for employees based on lessons learned from the incident.</li>
+    </ul><br>
+
+
+
+
+
+
+
+
+
+    <h2>This will be a short quiz reviewing what we have covered on this page.</h2>
+  </div>
+  <div class="container">
+    <div class="question-box">
+      <div class="question">
+        <h2 id="questionText"></h2>
+        <div class="question-type"> <!-- Added this div for the question type -->
+          Question Type: <span id="questionTypeText"></span>
+        </div>
+        <ul id="optionsList">
+        </ul>
+      </div>
+      <div class="feedback"></div>
+    </div>
+    <div class="navigation">
+      <button id="previousButton">Previous</button>
+      <button id="nextButton">Next</button>
+      <button id="resetButton" onclick="resetQuiz()" style="display: none;">Reset</button>
+    </div>
+    <div class="result">
+      <h2>Result</h2>
+      <div id="grade"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+     
+      <div class="footer-copyright">
+        &copy; 2023 Your Website Name
+      </div>
+    </div>
+  </footer>
+
+  <script src="security.js"></script>
+</body>
+</html>
