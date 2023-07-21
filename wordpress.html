@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordPress</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="windows.css">
+  <script src="https://kit.fontawesome.com/8ccdbbd2d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header" class="button">
+    <a href="Home.html">Home</a>
+    <a href="Windows.html">Windows</a>
+    <a href="security.html">Security</a>
+  </div>
+
+  <div class="img-container">
+    <img src="Assets/WordPress.png" class="img" alt="WordPress">
+  </div>
+
+  <div class="centered">
+    <h1>WordPress</h1>
+  </div>
+
+  <div class="centered">
+    <p>Brief info about WordPress:</p>
+    <ul>
+      <li>1. WordPress is 19 years old.</li>
+      <li>2. According to W3Techs web technologies surveys, WordPress currently powers nearly 43% of all websites on the internet.</li>
+      <li>3. According to Wappalyzer, WordPress dominates content management software usage, with a 67% market share.</li>
+      <li>4. WordPress plugin downloads passed 1.48 billion total downloads in 2016. That’s a 48% increase since 2015, when plugin downloads surpassed the 1 billion mark.</li>
+    </ul>
+    <h2>Here are some examples of security issues with WordPress:</h2>
+    <ul>
+      <li>1. The white screen of death.</li>
+      <li>2. 400 errors.</li>
+      <li>3. Internal server error.</li>
+      <li>4. Memory limit error.</li> 
+      <li>5. Error establishing a database connection.</li>
+      <li>6. Exceeded maximum upload file size.</li>
+      <li>7. Maximum execution time exceeded.</li>
+      <li>8. Failed auto-upgrade.</li>
+    </ul>
+    <p>You can find solutions to these issues and more <a target="_blank" href="https://themeisle.com/blog/wordpress-errors/">here</a>.</p>
+    <h2>This will be a short quiz reviewing what we have covered on this page.</h2>
+  </div>
+  <div class="container">
+    <div class="question-box">
+      <div class="question">
+        <h2 id="questionText"></h2>
+        <ul id="optionsList">
+        </ul>
+      </div>
+      <div class="feedback"></div>
+    </div>
+    <div class="navigation">
+      <button id="previousButton">Previous</button>
+      <button id="nextButton">Next</button>
+      <button id="resetButton" onclick="resetQuiz()" style="display: none;">Reset</button>
+    </div>
+    <div class="result">
+      <h2>Result</h2>
+      <div id="grade"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2023 Your Website Name
+      </div>
+    </div>
+  </footer>
+
+  <script src="wordpress.js"></script>
+</body>
+</html>

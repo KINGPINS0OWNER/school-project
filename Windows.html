@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="windows.css">
+  <script src="https://kit.fontawesome.com/8ccdbbd2d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header" class="button">
+    <a href="Home.html">Home</a>
+    <a href="wordpress.html">Wordpress</a>
+    <a href="security.html">Security</a>
+  </div>
+
+  <div class="img-container">
+    <img src="Assets/windows.png" class="img" alt="WordPress">
+  </div>
+
+  <div class="centered">
+    <h1>Windows</h1>
+  </div>
+
+  <div class="centered">
+    <p>Brief info about Windows:</p>
+    <ul>
+      <li>1. Windows 95 was the second most installed piece of software on computers in 1995; videogame DOOM was first</li>
+      <li>2. The generic silhouette outline placeholder picture in Microsoft Outlook 2010 is actually Bill Gates’ mug shot, when he was arrested for a driving offense.</li>
+      <li>3. Microsoft receives up to $8 per Android device sold in royalties, which equaled $3.4 billion in 2013.</li>
+      <li>4. Charles Simonyi, the inventor of Microsoft Office paid about $30 Million for a space trip to visit the International Space Station twice. </li>
+    </ul>
+    <h2>Here are some examples of security issues with Windows:</h2>
+    <ul>
+      <li>1. Slow Performance Issues.</li>
+      <li>2. Security Issues. </li>
+      <li>3. Update Errors. </li>
+      <li>4. Blue Screen of Death (BSOD) </li> 
+      <li>5.Driver Issues. </li>
+      <li>6. System Crashes & Freezes. </li>
+      <li>7. Network Connectivity Problems. </li>
+      <li>8. Printer Problems.</li>
+    </ul>
+    <p>You can find solutions to these issues and more at <a target="_blank" href="https://computertechnicians.com.au/14-most-common-windows-10-problems-and-their-solutions/">here</a>.</p>
+    <h2>This will be a short quiz reviewing what we have covered on this page.</h2>
+  </div>
+  <div class="container">
+    <div class="question-box">
+      <div class="question">
+        <h2 id="questionText"></h2>
+        <div class="question-type"> <!-- Added this div for the question type -->
+          Question Type: <span id="questionTypeText"></span>
+        </div>
+        <ul id="optionsList">
+        </ul>
+      </div>
+      <div class="feedback"></div>
+    </div>
+    <div class="navigation">
+      <button id="previousButton">Previous</button>
+      <button id="nextButton">Next</button>
+      <button id="resetButton" onclick="resetQuiz()" style="display: none;">Reset</button>
+    </div>
+    <div class="result">
+      <h2>Result</h2>
+      <div id="grade"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+     
+      <div class="footer-copyright">
+        &copy; 2023 Your Website Name
+      </div>
+    </div>
+  </footer>
+
+  <script src="windows.js"></script>
+</body>
+</html>
